@@ -130,6 +130,7 @@ public class ScientificCalculator {
 		textField.setBounds(10, 57, 315, 49);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
+		textField.setText("Press 'ON' button to start.");
 		
 		btnNewButton_2 = new JButton("x^y");
 		btnNewButton_2.setEnabled(false);
@@ -578,6 +579,7 @@ public class ScientificCalculator {
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("ON");
 		rdbtnNewRadioButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				textField.setText(null);
 				btn0.setEnabled(true);
 				btn1.setEnabled(true);
 				btn2.setEnabled(true);
